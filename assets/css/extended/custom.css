@@ -1,0 +1,27 @@
+.lang-select {
+    background: transparent;
+    color: var(--primary);
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: auto;
+    max-width: 80px;
+}
+.lang-select:hover {
+    color: var(--link-hover, var(--primary));
+    text-decoration: underline;
+}
+.lang-select option {
+    background: var(--entry);
+    color: var(--primary);
+}
+.logo-switches {
+    align-items: center;
+    gap: 4px;
+}

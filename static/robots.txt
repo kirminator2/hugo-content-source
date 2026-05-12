@@ -1,0 +1,29 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://kirminator2.github.io/sitemap.xml
+
+# AI crawlers - explicitly allowed
+User-agent: GPTBot
+Allow: /
+Disallow:
+
+User-agent: Google-Extended
+Allow: /
+Disallow:
+
+User-agent: CCBot
+Allow: /
+Disallow:
+
+User-agent: anthropic-ai
+Allow: /
+Disallow:
+
+User-agent: PerplexityBot
+Allow: /
+Disallow:
+
+User-agent: Claude-Web
+Allow: /
+Disallow:

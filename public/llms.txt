@@ -1,0 +1,29 @@
+# Crypto Whale Watch
+> Monitoring crypto whales, on-chain analysis, and trading signals.
+
+## About
+Crypto Whale Watch tracks large cryptocurrency wallets, market maker activity, and institutional money movements. We provide daily analysis of whale transactions, profitable wallet tracking, and trading insights.
+
+## Key Features
+- Real-time whale movement alerts
+- On-chain wallet analysis (Ethereum, via Etherscan API)
+- Market maker activity tracking (Jump Trading, Wintermute)
+- Daily profit/loss leaderboards
+- Trading signals and market analysis
+
+## Links
+- Home: https://kirminator2.github.io/
+- Search: https://kirminator2.github.io/search/
+- Telegram: https://t.me/forex_signals_fast
+
+## Latest Articles
+- [🐋 Jump Trading Moved $112M in ETH — Full On-Chain Analysis](https://kirminator2.github.io/posts/jump-trading-analysis/)
+- [Wintermute: 500+ Daily Transactions — How They Make Millions](https://kirminator2.github.io/posts/wintermute-analysis/)
+- [Top 5 Most Profitable Crypto Wallets: May 2025](https://kirminator2.github.io/posts/top-profit-wallets/)
+- [Ethereum Whales Accumulating: 500K ETH Moved in 24h](https://kirminator2.github.io/posts/ethereum-whales-accumulating-500k-eth-moved-in-24h/)
+
+## Data Sources
+- Etherscan API (V2, chainid=1)
+- DexScreener API
+- CoinGecko API
+- DefiLlama API

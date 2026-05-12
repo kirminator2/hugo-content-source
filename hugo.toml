@@ -1,0 +1,162 @@
+baseURL = "https://kirminator2.github.io/"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  author = "Whale Watch Analytics"
+  defaultTheme = "auto"
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+[params.homeInfoParams]
+  Title = "🐋 Crypto Whale Watch"
+  Content = "Monitoring crypto whales, smart money movements, daily signals and reports on large fund flows."
+
+# ===== English (default) =====
+[languages.en]
+  languageCode = "en"
+  languageName = "English"
+  title = "Crypto Whale Watch"
+  weight = 1
+
+  [languages.en.params]
+    description = "Crypto whale monitoring, on-chain analysis, daily trading signals"
+
+  [languages.en.menu]
+    [[languages.en.menu.main]]
+      identifier = "categories"
+      name = "Categories"
+      url = "/categories/"
+      weight = 10
+    [[languages.en.menu.main]]
+      identifier = "tags"
+      name = "Tags"
+      url = "/tags/"
+      weight = 20
+    [[languages.en.menu.main]]
+      identifier = "search"
+      name = "🔍"
+      url = "/search/"
+      weight = 30
+    [[languages.en.menu.main]]
+      identifier = "telegram"
+      name = "📱 Telegram"
+      url = "https://t.me/forex_signals_fast"
+      weight = 40
+
+# ===== Russian =====
+[languages.ru]
+  languageCode = "ru"
+  languageName = "Русский"
+  title = "Crypto Whale Watch"
+  weight = 2
+
+  [languages.ru.params]
+    description = "Мониторинг криптокитов, анализ on-chain, ежедневные сигналы"
+
+  [languages.ru.menu]
+    [[languages.ru.menu.main]]
+      identifier = "categories"
+      name = "Рубрики"
+      url = "/ru/categories/"
+      weight = 10
+    [[languages.ru.menu.main]]
+      identifier = "tags"
+      name = "Теги"
+      url = "/ru/tags/"
+      weight = 20
+    [[languages.ru.menu.main]]
+      identifier = "search"
+      name = "🔍"
+      url = "/ru/search/"
+      weight = 30
+    [[languages.ru.menu.main]]
+      identifier = "telegram"
+      name = "📱 Telegram"
+      url = "https://t.me/forex_signals_fast"
+      weight = 40
+
+# ===== Spanish =====
+[languages.es]
+  languageCode = "es"
+  languageName = "Español"
+  title = "Crypto Whale Watch"
+  weight = 3
+
+  [languages.es.params]
+    description = "Monitoreo de ballenas cripto, análisis on-chain, señales diarias"
+
+  [languages.es.menu]
+    [[languages.es.menu.main]]
+      identifier = "categories"
+      name = "Categorías"
+      url = "/es/categories/"
+      weight = 10
+    [[languages.es.menu.main]]
+      identifier = "tags"
+      name = "Tags"
+      url = "/es/tags/"
+      weight = 20
+    [[languages.es.menu.main]]
+      identifier = "search"
+      name = "🔍"
+      url = "/es/search/"
+      weight = 30
+    [[languages.es.menu.main]]
+      identifier = "telegram"
+      name = "📱 Telegram"
+      url = "https://t.me/forex_signals_fast"
+      weight = 40
+
+# ===== Chinese =====
+[languages.zh]
+  languageCode = "zh"
+  languageName = "中文"
+  title = "Crypto Whale Watch"
+  weight = 4
+
+  [languages.zh.params]
+    description = "加密鲸鱼监控、链上分析、每日交易信号"
+
+  [languages.zh.menu]
+    [[languages.zh.menu.main]]
+      identifier = "categories"
+      name = "分类"
+      url = "/zh/categories/"
+      weight = 10
+    [[languages.zh.menu.main]]
+      identifier = "tags"
+      name = "标签"
+      url = "/zh/tags/"
+      weight = 20
+    [[languages.zh.menu.main]]
+      identifier = "search"
+      name = "🔍"
+      url = "/zh/search/"
+      weight = 30
+    [[languages.zh.menu.main]]
+      identifier = "telegram"
+      name = "📱 Telegram"
+      url = "https://t.me/forex_signals_fast"
+      weight = 40
