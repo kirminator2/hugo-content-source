@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://kirminator2.github.io/sitemap.xml
