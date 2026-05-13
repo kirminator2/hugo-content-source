@@ -1,5 +1,10 @@
 <header class="header">
     <nav class="header-nav">
+        {{- /* Detect language from URL path */ -}}
+        {{- $lang := "en" -}}
+        {{- if strings.HasPrefix .RelPermalink "/ru/" }}{{- $lang = "ru" }}{{- end -}}
+        {{- $isRU := eq $lang "ru" -}}
+
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
@@ -59,7 +64,6 @@
                 {{- end }}
                 
                 {{- if (not site.Params.disableLangToggle) }}
-                    {{- $lang := .Lang}}
                     {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
                     {{- if $separator }}<span class="nav-sep">|</span>{{ end }}
                     <select class="lang-select" onchange="if (this.value) window.location.href=this.value;">
@@ -75,33 +79,27 @@
         </div>
 
         {{- $currentNode := . }}
-        {{- $menu := site.Menus.main }}
-        {{- if $menu }}
         <ul id="menu" class="menu">
-            {{- range $menu }}
-            {{- $url := .URL | relLangURL }}
-            {{- $isExternal := strings.HasPrefix $url "http" }}
-            {{- $isActive := or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}
-            {{- $isActive = or $isActive (eq $url ($currentNode.RelPermalink | relLangURL)) }}
+            {{- if $isRU }}
+            <li><a href="/ru/categories/" title="Рубрики"><span>Рубрики</span></a></li>
+            <li><a href="/ru/tags/" title="Теги"><span>Теги</span></a></li>
+            <li><a href="/ru/search/" title="Поиск"><span>Поиск</span></a></li>
+            {{- else }}
+            <li><a href="/categories/" title="Categories"><span>Categories</span></a></li>
+            <li><a href="/tags/" title="Tags"><span>Tags</span></a></li>
+            <li><a href="/search/" title="Search"><span>Search</span></a></li>
+            {{- end }}
             <li>
-                <a href="{{ $url }}" title="{{ .Title | default .Name }}"
-                    {{- if $isActive }} class="active" {{- end }}
-                    {{- if $isExternal }} target="_blank" rel="noopener noreferrer"{{- end }}>
-                    <span {{- if $isActive }} class="active" {{- end }}>
-                        {{- .Pre }}{{ .Name }}{{ .Post -}}
-                    </span>
-                    {{- if $isExternal }}
+                <a href="https://t.me/forex_signals_fast" title="Telegram" target="_blank" rel="noopener noreferrer">
+                    <span>Telegram</span>
                     <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
                         stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                         <path d="M15 3h6v6"></path>
                         <path d="M10 14 21 3"></path>
                     </svg>
-                    {{- end }}
                 </a>
             </li>
-            {{- end }}
         </ul>
-        {{- end }}
     </nav>
 </header>
